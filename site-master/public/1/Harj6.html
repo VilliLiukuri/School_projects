@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Harj6</title>
+</head>
+<body>
+
+  <p>Taulukon alkiot ovat</p>
+  <p id="rivit"></p>
+  <p>Taulukon alkioiden</p><br>
+  <p id="rivit2"></p>
+  
+    <script>
+ 
+  
+        let taulukko = [11, 22, 33, 44];
+        let summa = 0;
+        let lukumaara = 0;
+        let keskiarvo;
+        let tulosrivit = '';
+
+
+        for(let luku of taulukko) {
+        summa += luku
+        }
+
+        for (let solu of taulukko) {
+        tulosrivit += "Taulukko[" + lukumaara  + "] = " + solu + "<br>";
+        lukumaara += 1
+        }
+        
+        keskiarvo = (summa /lukumaara)
+
+        document.getElementById("rivit").innerHTML = tulosrivit;
+        document.getElementById("rivit2").innerHTML = "Lukumäärä: " + lukumaara + 
+                                             "<br>" + "Summa: " + summa +
+                                             "<br>" + "Keskiarvo: " + keskiarvo.toFixed(1);
+  
+    </script>  
+  
+
+    
+</body>
+</html>

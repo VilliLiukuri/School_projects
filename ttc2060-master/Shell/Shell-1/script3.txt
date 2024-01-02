@@ -1,0 +1,7 @@
+#!/bin/bash
+
+read -p "give dir path: " NAME
+
+A=$(ls $NAME | wc -l)
+
+echo "There is:" $A "files in:" $NAME "Folder"

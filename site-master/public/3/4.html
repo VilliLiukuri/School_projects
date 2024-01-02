@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div id="results" style="width:200px; height:auto; padding:20px; border:2px solid">
+  
+        <h1>SimpleToDo</h1>
+       
+        ToDo:
+        <br>
+        <input id="todo" type="text">
+        <br>
+        
+        <br>
+        <button onclick="lisaa()">Lisää</button>
+        <button onclick="poista()">Tyhjää lista</button>
+        
+        <ul id="lista">
+      
+        </ul>
+        
+        </div>
+<script>
+  function lisaa() {
+  var uusi = document.getElementById("todo").value;
+  let ulnode = document.getElementById("lista");
+  let linode = document.createElement('li');
+  let litext = document.createTextNode(uusi);
+  linode.appendChild(litext);
+  ulnode.appendChild(linode);
+}
+
+
+function poista() {
+  var list = document.getElementById("lista");
+  while(lista.hasChildNodes()) {
+    lista.removeChild(lista.firstChild);
+  }
+}
+</script>  
+    
+</body>
+</html>

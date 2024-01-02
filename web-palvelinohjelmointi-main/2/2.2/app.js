@@ -1,0 +1,23 @@
+const express = require('express')
+const app = express()
+
+app.use(express.json())
+
+const albumsRouter = require('./routes/albums')
+
+/*const logger = (req, res, next) => {
+    console.log(req.query)
+    const { search } = req.query
+    if (!search) {
+        return res.status(401).json({success:false})
+    } 
+    next()
+}
+
+app.use(logger)*/
+app.use('/api/albums', albumsRouter)
+
+const PORT = 5001
+app.listen(PORT, ()=> {
+  console.log(`server listening on port ${PORT}...`)
+})

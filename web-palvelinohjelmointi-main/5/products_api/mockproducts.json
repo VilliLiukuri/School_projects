@@ -1,0 +1,162 @@
+[
+  {
+    "color": "blue",
+    "department": "Computers",
+    "productName": "Unbranded Wooden Mouse",
+    "price": "794.00",
+    "productMaterial": "Concrete",
+    "product": "Chair"
+  },
+  {
+    "color": "mint green",
+    "department": "Books",
+    "productName": "Sleek Cotton Shirt",
+    "price": "214.00",
+    "productMaterial": "Concrete",
+    "product": "Shoes"
+  },
+  {
+    "color": "fuchsia",
+    "department": "Clothing",
+    "productName": "Gorgeous Cotton Hat",
+    "price": "647.00",
+    "productMaterial": "Concrete",
+    "product": "Car"
+  },
+  {
+    "color": "lavender",
+    "department": "Health",
+    "productName": "Rustic Plastic Fish",
+    "price": 636.00,
+    "productMaterial": "Metal",
+    "product": "Gloves"
+  },
+  {
+    "color": "lavender",
+    "department": "Books",
+    "productName": "Handmade Granite Ball",
+    "price": 577.00,
+    "productMaterial": "Wooden",
+    "product": "Pants"
+  },
+  {
+    "color": "red",
+    "department": "Jewelery",
+    "productName": "Practical Concrete Sausages",
+    "price": 851.00,
+    "productMaterial": "Plastic",
+    "product": "Table"
+  },
+  {
+    "color": "grey",
+    "department": "Home",
+    "productName": "Licensed Cotton Car",
+    "price": 725.00,
+    "productMaterial": "Soft",
+    "product": "Cheese"
+  },
+  {
+    "color": "silver",
+    "department": "Sports",
+    "productName": "Small Soft Chair",
+    "price": 324.00,
+    "productMaterial": "Plastic",
+    "product": "Car"
+  },
+  {
+    "color": "azure",
+    "department": "Computers",
+    "productName": "Small Soft Computer",
+    "price": 858.00,
+    "productMaterial": "Cotton",
+    "product": "Sausages"
+  },
+  {
+    "color": "tan",
+    "department": "Music",
+    "productName": "Handmade Frozen Bacon",
+    "price": 911.00,
+    "productMaterial": "Plastic",
+    "product": "Car"
+  },
+  {
+    "color": "plum",
+    "department": "Automotive",
+    "productName": "Sleek Plastic Mouse",
+    "price": 374.00,
+    "productMaterial": "Rubber",
+    "product": "Sausages"
+  },
+  {
+    "color": "tan",
+    "department": "Jewelery",
+    "productName": "Handcrafted Steel Shirt",
+    "price": 444.00,
+    "productMaterial": "Wooden",
+    "product": "Keyboard"
+  },
+  {
+    "color": "orange",
+    "department": "Home",
+    "productName": "Practical Soft Computer",
+    "price": 691.00,
+    "productMaterial": "Frozen",
+    "product": "Shirt"
+  },
+  {
+    "color": "mint green",
+    "department": "Industrial",
+    "productName": "Incredible Concrete Table",
+    "price": 841.00,
+    "productMaterial": "Plastic",
+    "product": "Shirt"
+  },
+  {
+    "color": "plum",
+    "department": "Baby",
+    "productName": "Small Steel Tuna",
+    "price": 847.00,
+    "productMaterial": "Steel",
+    "product": "Mouse"
+  },
+  {
+    "color": "azure",
+    "department": "Outdoors",
+    "productName": "Tasty Concrete Pants",
+    "price": 947.00,
+    "productMaterial": "Rubber",
+    "product": "Car"
+  },
+  {
+    "color": "red",
+    "department": "Kids",
+    "productName": "Rustic Cotton Sausages",
+    "price": 47.00,
+    "productMaterial": "Steel",
+    "product": "Pants"
+  },
+  {
+    "color": "orange",
+    "department": "Beauty",
+    "productName": "Tasty Frozen Pants",
+    "price": 585.00,
+    "productMaterial": "Fresh",
+    "product": "Shoes"
+  },
+  {
+    "color": "mint green",
+    "department": "Health",
+    "productName": "Unbranded Frozen Shoes",
+    "price": 274.00,
+    "productMaterial": "Frozen",
+    "product": "Shoes"
+  },
+  {
+    "color": "lavender",
+    "department": "Tools",
+    "productName": "Practical Wooden Ball",
+    "price": 978.00,
+    "productMaterial": "Rubber",
+    "product": "Fish"
+  }
+]

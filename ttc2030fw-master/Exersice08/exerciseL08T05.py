@@ -1,0 +1,8 @@
+num1 = int(input("give number"))
+num2 = int(input("give number"))
+num3 = int(input("give number"))
+num4 = int(input("give number"))
+num5 = int(input("give number"))
+nums = (num1, num2, num3, num4, num5)
+new_nums = list(filter(lambda x: x >0,nums))
+print(sum(new_nums))

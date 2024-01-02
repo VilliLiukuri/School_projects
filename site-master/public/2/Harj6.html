@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Harj1</title>
+</head>
+<body>
+
+<div style="background-color: lightblue; width: 200px; padding: 10px;">
+
+<h1>arvot</h1>
+    
+<form id="f">
+     <input type=number id="n1" placeholder="tunnit"><br>
+     <input type=number id="n2" placeholder="minuutit"><br>
+     <input type=number id="n3" placeholder="sekunnit"><br>
+     <input type=number id="n4" placeholder="kilometrit"><br><br>
+     <button type="button" onclick="tulostaSumma(f.n1.value, f.n2.value, f.n3.value, f.n4.value)">Laske vauhdit</button>
+</form><br>    
+  
+<div id="results"></div>
+<div id="results2"></div>
+
+</div>
+
+<script>
+  
+    function tulostaSumma(a, b, c, d){
+
+        h = parseInt(a)
+        min = parseInt(b)
+        sec = parseInt(c)
+        kilometrit = parseInt(d)
+
+        var tunnit = parseInt(h)+(parseInt(min)*60+parseInt(sec))/3600; 
+        var kmh = kilometrit/tunnit;
+
+        var eka = kmh.toFixed(2);
+
+        var sekunnit = parseInt(h)*60*60+parseInt(min)*60+parseInt(sec);
+        sekunnitPerKm = sekunnit/kilometrit;
+
+        var minutes = 0;
+
+        while (sekunnitPerKm >= 60){
+             minutes++;
+            sekunnitPerKm = sekunnitPerKm - 60;
+        }
+        sekunnitPerKm = Math.round(sekunnitPerKm);
+        sekunnitPerKm = String('0'+ sekunnitPerKm).slice(-2);
+
+
+
+        
+
+        document.getElementById("results").innerHTML = eka + "km/h";
+        document.getElementById("results2").innerHTML = minutes + ":" + sekunnitPerKm + "/km";
+    }
+  
+</script>
+    
+
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+ 
+    Valitse väri 
+    <br>
+    <select id="colors">
+      <option value="white">White</option>
+      <option value="lightblue">blue</option>
+      <option value="yellow">yellow</option>
+      <option value="lightgreen">green</option>
+      <option value="red">red</option>
+      <option value="lightgrey">grey</option>
+      </select>
+      <br>
+      <br>
+      Valitse juhla
+      <br>
+      <input id="juhla" type="text" onkeyup="vaihda2()">
+      <br>
+      
+      <br>
+      <button onclick="vaihda()">Vaihda valittu väri</button>
+      
+      <div id="results" style="width:200px; height:100px; padding:20px; border:2px solid; margin-top:10px">
+        <h1>Tulostusalue</h1>
+        <p id="results2"></p>
+      </div>
+           
+<script>
+
+
+function vaihda() {
+  var varit = document.getElementById("colors").value;
+  var element = document.getElementById("results");
+  element.style.backgroundColor = varit;
+}
+
+
+function vaihda2() {
+
+  var teksti = document.getElementById("juhla").value;
+  document.getElementById("results2").innerHTML = teksti;
+}
+
+
+</script>
+
+</body>
+</html>

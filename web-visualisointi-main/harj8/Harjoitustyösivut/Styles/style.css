@@ -1,0 +1,319 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  background: url(../images/segla.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 20%;
+  height: calc(100vh - 0px);
+  margin: 0;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+  color: rgb(240, 240, 240);
+  min-width: 100%;
+  min-height: 100%;
+  padding: 3% 2%;
+}
+
+.flex-container1 {
+  font-size: 30px;
+  text-align: center;
+  color: rgb(240, 240, 240);
+  padding: 3% 1%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.flex-item-text {
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-pic-1 {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 300px;
+  flex: 30%;
+  background: url(../images/white.png);
+}
+
+.flex-item-pic-2 {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 300px;
+  flex: 30%;
+  background: url();
+}
+
+.flex-item-pic-3 {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 300px;
+  flex: 30%;
+  background: url(../images/kalotti3.jpg);
+}
+
+article {
+  text-align: center;
+  padding: 90px 10px;
+}
+
+section {
+  background: rgba(15, 15, 15, 0.99);
+  max-width: 1200px;
+  margin: auto;
+}
+
+video {
+  max-width: 80%;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px rgb(0, 0, 0);
+  border-style: inset;
+  border-width: 10px;
+  border-color: rgb(39, 39, 39);
+  border-radius: 5px;
+  margin: 10% 0;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+nav {
+  background: rgb(15, 15, 15);
+  height: 80px;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+label.logo {
+  color: rgb(240, 240, 240);
+  font-size: 40px;
+  line-height: 80px;
+  padding: 0 0 0 100px;
+  font-weight: bold;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: rgb(240, 240, 240);
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a.active, a:hover {
+  color: rgb(15, 15, 15);
+  background: rgb(240, 240, 240);
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: rgb(240, 240, 240);
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+h1 {
+  color: rgb(15, 15, 15);
+  font-size: 45px;
+  text-shadow: 2px 2px 8px #000000;
+  font-weight: 600;
+}
+
+h2 {
+  color: rgb(15, 15, 15);
+  font-size: 15px;
+  text-shadow: 2px 2px 8px #ffffff;
+  padding: 1%;
+}
+
+h4 {
+  color: rgb(240, 240, 240);
+  font-size: 45px;
+  text-shadow: 2px 2px 8px #000000;
+  font-weight: 100;
+  padding-bottom: 10px;
+}
+
+p {
+  padding-top: 1%;
+  color: rgb(15, 15, 15);
+  font-size: 30px;
+  text-shadow: 2px 2px 8px #000000;
+}
+
+p1 {
+  color: rgb(240, 240, 240);
+  font-size: 20px;
+  padding-top: 1%;
+  text-shadow: 2px 2px 8px #000000;
+  font-weight: 100;
+}
+
+img {
+  vertical-align: middle;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 8px;
+}
+
+.fa {
+  padding: 5px;
+  font-size: 30px;
+  text-align: center;
+  margin: 30px;
+  border-radius: 10px;
+}
+
+.fa-instagram {
+  color: rgb(240, 240, 240);
+}
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 40px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+  nav {
+    position: relative;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(15, 15, 15, 0.99);
+    top: 80px;
+    left: 100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 30px;
+  }
+  a:hover, a.active {
+    background: none;
+    color: rgb(240, 240, 240);
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  article {
+    text-align: center;
+    padding: 10% 2%;
+    max-height: 100vh;
+  }
+  .fa {
+    padding: 5px;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  h1 {
+    color: rgb(15, 15, 15);
+    font-size: 35px;
+    text-shadow: 2px 2px 8px #000000;
+    font-weight: 600;
+  }
+  h2 {
+    color: rgb(15, 15, 15);
+    font-size: 12px;
+    text-shadow: 2px 2px 8px #ffffff;
+    padding: 1%;
+  }
+  h4 {
+    font-size: 35px;
+  }
+  p {
+    padding-top: 1%;
+    color: rgb(15, 15, 15);
+    font-size: 25px;
+    text-shadow: 2px 2px 8px #000000;
+  }
+  .flex-container {
+    flex-direction: column;
+  }
+  .flex-item-text {
+    padding: 10px;
+    flex: 50%;
+  }
+  .flex-item-pic-1 {
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 5%;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    flex: 50%;
+    background: url(../images/white.png);
+  }
+  .flex-item-pic-2 {
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 5%;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    flex: 50%;
+    background: url(../images/kalotti3.jpg);
+  }
+  .flex-item-pic-3 {
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 5%;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    flex: 50%;
+    background: url(../images/kalotti3.jpg);
+  }
+  video {
+    margin: 3% 0;
+  }
+}/*# sourceMappingURL=style.css.map */

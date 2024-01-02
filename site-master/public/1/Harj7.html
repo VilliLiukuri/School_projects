@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Harj7</title>
+</head>
+<body>
+  
+  <h1>anna vuosiluku</h1>
+  <input type="number" id="vuosi"><br><br>
+  <button type="button" onclick="karkaus(vuosi.value)">
+  Paina
+  </button><br><br>
+
+ <div id="results"></div>
+
+<script>
+  
+  function karkaus(a) {  
+    var div = document.getElementById("results");
+ 
+    if ((a % 4) != 0) {
+      div.innerHTML = ("ei ole karkausvuosi");
+    }
+    
+    else if ((a % 100) != 0) {
+      div.innerHTML = ("on karkausvuosi");
+    }
+    
+    else if ((a % 400) != 0){
+      div.innerHTML = ("ei ole karkausvuosi");
+    }
+    
+    else {
+      div.innerHTML = ("on karkausvuosi");
+    }
+}
+  
+</script>
+    
+
+</body>
+</html>

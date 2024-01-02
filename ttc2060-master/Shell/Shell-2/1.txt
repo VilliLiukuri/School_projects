@@ -1,0 +1,22 @@
+#!/bin/bash
+
+read -p "Choose file to remove " x
+
+if [ -f  $x ]
+then
+ echo "$x file exists and is a regular file"
+else
+ echo "$x is not a regular file"
+ if [ -s $x ]
+ then
+  echo "$x could not remove the file"
+ else
+  rm $x
+   echo "$x file removed"
+ fi
+fi
+
+
+
+
+

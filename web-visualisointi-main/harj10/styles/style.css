@@ -1,0 +1,14 @@
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    position: relative;
+    animation: myframes2 5s infinite;
+    animation-timing-function: ease;
+}
+@keyframes myframes2 {
+    50% {
+        scale: 150%;
+    }
+}

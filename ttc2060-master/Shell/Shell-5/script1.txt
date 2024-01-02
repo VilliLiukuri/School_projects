@@ -1,0 +1,17 @@
+#!/bin/bash
+
+x="x"
+values=()
+
+while [ $x != "" ]
+do
+ read -p "give values. empty = exit  " x
+  values+=($x)
+done
+
+echo ${values[@]} | tee -a animal.txt
+
+while read line
+do
+ echo ${line}
+done < animal.txt

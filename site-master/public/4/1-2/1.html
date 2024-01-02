@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head onload="renderHouses()">
+    <style>
+        #talot {
+        width: 600px;
+        height: 800px;
+        margin: 10px;
+        overflow-y: auto;
+        float: left;
+
+        }
+        .houseContainer {
+            border-width: 1px;
+            border-style: solid;
+            width: 570px;
+            height: 165px;
+            font-size: 12px;
+            margin: 2px;
+            padding: 2px;
+            display: block;
+            background-color: lightgrey;
+        }
+
+        .houseImage {
+            height: 160px;
+            width: 225px;
+            float: left;
+            margin: 2px;
+            border-width: 1px;
+            border-style: solid;
+        }
+
+        p.header {
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        p.text {
+            font-style: italic;
+            font-size: 12px;
+        }
+
+
+    </style>
+    <title>Teht 1</title>
+</head>
+
+<body>
+    <div>
+    <input id="alle1" type="checkbox" onchange="renderHouses()">
+    <label>Alle 200 m2</label>
+    <br>
+    <input id="alle2" type="checkbox" onchange="renderHouses()">
+    <label>Alle 1 000 000 €</label>
+    </div>
+
+    <div id="talot">
+
+
+</div>
+    
+<script type="text/javascript" src="talot.js">
+    
+</script>
+</body>
+</html>

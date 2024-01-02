@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <ul>
+        <a onclick="vaihda(0)" href="#"> kuva 1</a> |
+        <a onclick="vaihda(1)" href="#"> kuva 2</a> |
+        <a onclick="vaihda(2)" href="#"> kuva 3</a> |
+    </ul>
+       <img id="kuva" src="1.jpg" width="1000px">
+
+<script>
+var kuvat = ["1.jpg", "2.jpg", "3.jpg"];
+
+function vaihda(nro)  {
+  let  imgelement = document.getElementById("kuva");
+  imgelement.src = kuvat[nro];
+}
+
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>

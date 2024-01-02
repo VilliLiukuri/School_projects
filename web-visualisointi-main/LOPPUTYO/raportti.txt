@@ -1,0 +1,4 @@
+Kurssin harjotustyöhön aikaa kului noin 20h.
+Tarkoituksena oli käyttää Bootsrap ja SASS.
+Harjoitustyötä tehdessä tuli opittua Bootsrappia ja miten helppo sillä on saada sivusta responsiivinen.
+Harkkatyö osaltani ei ole kovin hyvä. Joten arvosanaksi antaisin itselleni 1/5.

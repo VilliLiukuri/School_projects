@@ -1,0 +1,79 @@
+@hostname = [::1]
+@port = 5001
+@host = {{hostname}}:{{port}}
+@id_user = 63f877c57c382237de0a0e01
+@id_vehicle = 63f88ab37c382237de0a0e22
+@token_user = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InR1bGl0dXVra2EiLCJpZCI6IjYzZjg3N2M1N2MzODIyMzdkZTBhMGUwMSIsImlhdCI6MTY3NzIzNTY3OCwiZXhwIjoxNjc3MjM2NTc4fQ.LQMDXL0jEDNEjYwZPgv-_BSfcWgnjGpdc2G7PYaSPl4
+
+### Get all
+GET http://{{host}}/api/vehicles/
+
+### Get single vehicle
+GET http://{{host}}/api/vehicles//{{id_vehicle}}
+
+### Create (with license plate, should pass the validation)
+POST http://{{host}}/api/vehicles/
+Content-Type: application/json
+Authorization: Bearer {{token_user}}
+
+{
+    "type":"Auto",
+    "make":"Volovo",
+    "model":"Amazon",
+    "license_plate": "ASD-334",
+    "userId": "{{id_user}}"
+}
+
+### Create (no license plate, should fail the validation)
+POST http://{{host}}/api/vehicles/
+Content-Type: application/json
+Authorization: Bearer {{token_user}}
+
+{
+    "type":"EV",
+    "make":"Tesla",
+    "model":"3",
+    "userId": "{{id_user}}"
+}
+
+### Create (should fail the validation, duplicate license plate!)
+POST http://{{host}}/api/vehicles/
+Content-Type: application/json
+Authorization: Bearer {{token_user}}
+
+{
+  "type": "Passenger car",
+  "make": "",
+  "model": "Jazz",
+  "license_plate": "ABC-123",
+  "userId": "{{id_user}}"
+}
+
+### Create (Should fail the validation, invalid license plate)
+POST http://{{host}}/api/vehicles/
+Content-Type: application/json
+Authorization: Bearer {{token_user}}
+
+{
+  "type": "Van",
+  "make": "Ford",
+  "model": "Transit",
+  "license_plate": "456",
+  "userId": "{{id_user}}"
+}
+
+### UPDATE
+PUT http://{{host}}/api/vehicles/{{id_vehicle}}
+Content-Type: application/json
+Authorization: Bearer {{token_user}}
+
+
+{
+    "make":"Audi",
+    "model":"A7"
+}
+
+### DELETE
+DELETE http://{{host}}/api/vehicles/{{id_vehicle}}
+Authorization: Bearer {{token_user}}
+

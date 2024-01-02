@@ -1,0 +1,47 @@
+
+
+@mixin flexcenter {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 300px
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    color: $colorB;
+    min-width: 100%;
+    min-height: 100%;
+    padding: 3% 2%;
+}
+.flex-container1 {
+    font-size: 30px;
+    text-align: center;
+    color: $colorB;
+    padding: 3% 1%;
+    max-width: 800px;
+    margin: auto;
+}
+.flex-item-text {
+    padding: 10px;
+    flex: 50%;
+}
+.flex-item-pic-1 {
+    @include flexcenter ();
+    flex: 30%;
+    background: url(../images/white.png);
+}
+.flex-item-pic-2 {
+    @include flexcenter ();
+    flex: 30%;
+    background: url();
+}
+.flex-item-pic-3 {
+    @include flexcenter ();
+    flex: 30%;
+    background: url(../images/kalotti3.jpg);
+}

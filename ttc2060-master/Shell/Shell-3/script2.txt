@@ -1,0 +1,8 @@
+#!/bin/bash
+
+count_objects() {
+ dir=$(ls | wc -l)
+  echo $dir
+}
+
+count_objects

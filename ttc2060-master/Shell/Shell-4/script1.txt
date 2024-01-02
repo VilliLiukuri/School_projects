@@ -1,0 +1,16 @@
+#!/bin/bash
+
+read -p "annappa URLI: " uliuli
+
+pinga() {
+ ping -c 1 $uliuli
+
+if [ ${?} -ne 0 ]
+then
+ echo "cannot ping URL: ${uliuli} "
+ exit 1
+fi
+}
+
+pinga
+exit 0

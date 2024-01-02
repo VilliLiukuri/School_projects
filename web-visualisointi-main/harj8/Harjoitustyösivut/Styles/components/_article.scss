@@ -1,0 +1,20 @@
+article {
+    text-align: center;
+    padding: 90px 10px;
+}
+section {
+    background:$colorE;
+    max-width: 1200px;
+    margin: auto;
+}
+video {
+    max-width: 80%;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+    border-style: inset;
+    border-width: 10px;
+    border-color: rgb(39, 39, 39);
+    border-radius: 5px;
+    margin: 10% 0;
+    object-fit: fill;
+}

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+read -p "Give program to install: " program
+
+sudo apt-get install -y ${program}
+
+if [ ${?} -eq 0 ]
+then
+ echo "Downloading ${program} succesful"
+ exit 0
+else
+ echo "Cannot download ${program}"
+ exit 111
+fi
+

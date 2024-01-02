@@ -1,0 +1,9 @@
+#!/bin/bash
+
+read -p "Give first file name: " NAME1
+read -p "Give second file name: " NAME2
+read -p "Give third file name: " NAME3
+
+A=$(rm $NAME1 $NAME2 $NAME3)
+
+echo "I teleted following files: " $NAME1"," $NAME2 "and" $NAME3

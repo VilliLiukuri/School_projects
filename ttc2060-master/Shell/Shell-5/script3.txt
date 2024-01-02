@@ -1,0 +1,25 @@
+#!/bin/bash
+
+read -p "Give name of csv file " a
+read -p "Give cars manufacturer " x
+read -p "Give cars model " m
+read -p "Give cars year " y
+read -p "Give cars color " c
+
+combine() {
+combined="$x;$m;$y;$c"
+echo $combined | tee -a cars.csv
+}
+
+combine
+
+while IFS=";" read -r Manufacturer Model Year Color
+do
+i=$((i+1))
+ echo "---Line---${i}"
+ echo "Manufacturer: ${Manufacturer}"
+ echo "Model: ${Model}"
+ echo "Year: ${Year}"
+ echo "Color: ${Color}"
+done < <(tail -n +2 $a)
+

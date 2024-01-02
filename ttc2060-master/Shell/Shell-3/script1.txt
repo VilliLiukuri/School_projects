@@ -1,0 +1,13 @@
+#!/bin/bash
+x="x"
+array=()
+while [ $x != "exit" ]
+do
+ read -p " Give values, exit to finish: " x
+  array+=($x)
+done
+
+for((i=0;i<${#array[@]};i++))
+do
+ echo "$i: ${array[$i]}"
+done

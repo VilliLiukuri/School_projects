@@ -1,0 +1,28 @@
+body{
+    background-color: bisque;
+}
+svg {
+    transition: transform 300ms ease-in-out;
+    transform-origin: 50% 50%;
+    transform: scale(20%);
+}
+
+svg:hover circle.a{
+    fill : #461313;
+}
+svg:hover circle.b{
+    fill : #180505;
+}
+svg:hover circle.c{
+    fill : #551515;
+}
+
+svg:active circle.a{
+    fill: rgb(190, 130, 130);
+}
+svg:active circle.b{
+    fill: rgb(172, 88, 88);
+}
+svg:active circle.c{
+    fill: rgb(190, 130, 130);
+}

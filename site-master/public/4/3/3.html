@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head onload="renderHouses()">
+    <style>
+        div {
+        width: 200px;
+        height: auto;
+        margin: 10px;
+        padding: 10px;
+        background-color: bisque;
+        }
+
+        input {
+            margin: 5px;
+        }
+        h1 {
+            margin: 10px;
+        }
+
+
+        .houseContainer {
+            border-width: 1px;
+            border-style: solid;
+            width: 570px;
+            height: 165px;
+            font-size: 12px;
+            margin: 2px;
+            padding: 2px;
+            display: block;
+            background-color: lightgrey;
+        }
+
+        .houseImage {
+            height: 160px;
+            width: 225px;
+            float: left;
+            margin: 2px;
+            border-width: 1px;
+            border-style: solid;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+    </style>
+    <title>Teht 3</title>
+</head>
+
+<body>
+    <div>
+    <h1>Nimihaku</h1>    
+    <input id="haku" onkeyup="renderNames()" placeholder="Hae etunimeä">
+
+
+    <ul id="nimet">
+
+
+    </ul>
+    
+<script type="text/javascript" src="nimet.js">
+    
+</script>
+</body>
+</html>

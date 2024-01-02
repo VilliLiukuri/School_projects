@@ -1,0 +1,3 @@
+# android
+
+The content of the course was appropriately challenging. As with your other courses, the material was good and suited well for distance learning. The workload was suitable for me, although I ended up finishing the course a bit last minute. I give the course a grade of 4, not 5, because I had to use my laptop for this course and couldn't use my more powerful desktop computer. Based on the completed assignments, I rate myself with a grade of 1

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+read -p "give file name: " NAME
+
+A=$(touch /home/user/$NAME)
+
+B=$(date +"%y-%m-%d")
+
+echo $NAME $B

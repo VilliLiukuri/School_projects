@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Harj5</title>
+</head>
+<body>
+
+ 
+    Luku 1<br>
+    <input type="number" id="luku1"><br>
+    Luku 2<br>
+    <input type="number" id="luku2"><br>
+    Luku 3<br>
+    <input type="number" id="luku3"><br><br>
+    <button type="button" onclick="tulosta(luku1.value, luku2.value, luku3.value)">
+      Tulosta
+    </button><br><br>
+
+<div id="results"></div>
+ 
+<script>
+  
+    function tulosta(a, b ,c){
+
+    var div = document.getElementById("results");
+    var taulu = [a, b, c];
+    var taulu2 = [a, b, c];
+  
+    if ((c % 2) != 0){
+        taulu2.splice(2,1);
+    }
+
+    if ((b % 2) != 0){
+         taulu2.splice(1,1);
+    }
+
+    if ((a % 2) != 0){
+        taulu2.splice(0,1);
+    }
+
+ 
+
+  
+    div.innerHTML = ("Antamasi taulukko: " + taulu + "<br>" + 
+                     "Parilliset luvut: " + taulu2);
+    }
+  
+</script>
+
+</body>
+</html>

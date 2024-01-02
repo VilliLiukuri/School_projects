@@ -1,0 +1,28 @@
+#!/bin/bash
+
+read -p "1. plussa 2. miinus 3. kerto 4. jako(anna numero 1-4): ">read -p "Anna eka numero: " a
+read -p "Anna toka numero: " b
+
+if [ $num = 1 ]
+ then
+  pluslasku() {
+   echo $(($a+$b))
+  }
+  pluslasku
+ elif [ $num = 2 ]
+  then
+   miinuslasku() {
+    echo $(($a-$b))
+   }
+   miinuslasku
+ elif [ $num = 3 ]
+  then kertolasku() {
+   echo $(($a*$b))
+  }
+  kertolasku
+ elif [ $num = 4 ]
+  then jakolasku() {
+   echo $(($a/$b))
+  }
+  jakolasku
+fi

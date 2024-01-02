@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+  <h1>OMG - Lady Gaga start singing!</h1>
+  <div id="results"></div>
+  <div id="results2"></div>
+  
+<script>
+
+    var fireworks = "";
+    var div = document.getElementById("results");
+    var div2 = document.getElementById("results2");
+
+
+    const print = (str, taskTime) => {
+        setTimeout(function() {
+            fireworks += ("NICE - fireworks!" + "<br>")
+            div.innerHTML = (fireworks);
+        }, taskTime)
+  
+    }
+
+
+
+    const execute = (str, taskTime, callback)  => {  
+        callback(str, taskTime),
+        taskTime += 5000
+    }
+
+
+
+    for (let i = 1; i <= 5; i++) {
+        execute(fireworks, 5000 * i, print)
+        if (i == 5) {
+            setTimeout(function(){ div2.innerHTML = ("WOW - It was the best concert in my life..."); }, 5000 + 5000 * i);
+        }
+        else { 
+            continue;
+        }
+    }
+
+</script>    
+    
+  
+</body>
+</html>

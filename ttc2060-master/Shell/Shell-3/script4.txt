@@ -1,0 +1,11 @@
+#!/bin/bash
+dir=()
+path="asd"
+while read -p "Give path: " x
+do
+ count_objects() {
+   dir+="path $x objects: "$(ls $x | wc -l)"  "
+ }
+ count_objects
+done
+echo $dir

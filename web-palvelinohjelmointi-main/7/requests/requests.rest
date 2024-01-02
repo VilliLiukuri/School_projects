@@ -1,0 +1,43 @@
+@host = localhost
+@port = 5001
+@hostname = {{host}}:{{port}}
+
+### Send login form
+POST /login/password
+Host: {{hostname}}
+Content-Type: application/x-www-form-urlencoded
+
+username=john&password=doe
+
+### Register Bob
+
+POST /register
+Host: {{hostname}}
+Content-Type: application/json
+
+{
+    "username":"bob",
+    "email": "bob@company.com",
+    "name" : "Bob",
+    "password": "secret"
+}
+### Register Alice
+
+POST /register
+Host: {{hostname}}
+Content-Type: application/json
+
+{
+    "username":"alice",
+    "email": "alice@email.com",
+    "name" : "Alice",
+    "password": "letmein"
+}
+
+###
+GET /
+Host: {{hostname}}
+
+###
+POST /logout
+Host: {{hostname}}

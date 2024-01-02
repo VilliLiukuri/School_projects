@@ -1,0 +1,24 @@
+#!/bin/bash
+
+if [ -e /etc/hosts ]
+then
+ echo "/etc/hosts available."
+ if [ -w /etc/hosts ]
+ then
+  echo "you have permission to edit the file"
+ else
+  echo "you dont have permission to edit the file"
+ fi
+fi
+
+
+
+
+
+
+
+
+
+
+
+

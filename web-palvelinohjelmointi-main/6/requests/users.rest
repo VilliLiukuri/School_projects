@@ -1,0 +1,27 @@
+@hostname = [::1]
+@port = 5001
+@host = {{hostname}}:{{port}}
+
+### Login (and get token)
+POST http://{{host}}/api/login
+Content-Type: application/json
+
+{
+    "username" : "tulituukka",
+    "password" : "secret3"
+}
+
+### Create (register) a new REGULAR user
+POST http://{{host}}/api/users/
+Content-Type: application/json
+
+{
+  "username": "katteloo",
+  "name" : "kattelookoha",
+  "email" : "kattoony@miuku.mauku",
+  "password" : "secret3",
+  "passwordconf" : "secret3"
+}
+
+###
+GET http://{{host}}/api/users/

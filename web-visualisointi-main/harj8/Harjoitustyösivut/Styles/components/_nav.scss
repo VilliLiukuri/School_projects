@@ -1,0 +1,50 @@
+$height: 80px;
+
+nav {
+    background: $colorA;
+    height: $height;
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+label.logo {
+    color: $colorB;
+    font-size: 40px;
+    line-height: $height;
+    padding: 0 0 0 100px;
+    font-weight: bold;
+}
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+nav ul li {
+    display: inline-block;
+    line-height: $height;
+    margin: 0 5px;
+}
+nav ul li a {
+    color: $colorB;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active,a:hover {
+    color: $colorA;
+    background: $colorB;
+    transition: .5s;
+}
+.checkbtn {
+    font-size: 30px;
+    color: $colorB;
+    float: right;
+    line-height: $height;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}

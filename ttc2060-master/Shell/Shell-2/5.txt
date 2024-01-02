@@ -1,0 +1,15 @@
+#!/bin/bash
+
+read -p "1. plussa 2. miinus 3. kerto 4. jako(anna numero 1-4): " num
+read -p "Anna eka numero: " a
+read -p "Anna toka numero: " b
+
+if [ $num = 1 ]
+then echo $(($a+$b))
+elif [ $num = 2 ]
+then echo $(($a-$b))
+elif [ $num = 3 ]
+then echo $(($a*$b))
+elif [ $num = 4 ]
+then echo $(($a/$b))
+fi

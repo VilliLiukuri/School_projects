@@ -1,0 +1,9 @@
+#!/bin/bash
+
+path="asd"
+while [ $path != "stop" ]
+ do
+  read -p "Give objects name: " path
+   file $path
+ done
+

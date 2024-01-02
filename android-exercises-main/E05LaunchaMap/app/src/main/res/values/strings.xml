@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">E05 Launch a Map</string>
+    <string name="info_text">Give a location (lat and lng):</string>
+    <string name="button_text">Show a Map</string>
+    <string name="latitude_content_description">Enter latitude value</string>
+    <string name="longitude_content_description">Enter longitude value</string>
+</resources>
+

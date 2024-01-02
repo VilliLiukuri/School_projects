@@ -1,0 +1,50 @@
+
+h1 {
+    color: $colorA;
+    font-size: 45px;
+    text-shadow: 2px 2px 8px $colorD;
+    font-weight: 600;
+}
+h2 {
+    color: $colorA;
+    font-size: 15px;
+    text-shadow: 2px 2px 8px $colorC;
+    padding: 1%;
+}
+h4 {
+    color: $colorB;
+    font-size: 45px;
+    text-shadow: 2px 2px 8px $colorD;
+    font-weight: 100;
+    padding-bottom: 10px
+}
+p {
+    padding-top: 1%;
+    color: $colorA;
+    font-size: 30px;
+    text-shadow: 2px 2px 8px $colorD;
+}
+p1 {
+    color: $colorB;
+    font-size: 20px;
+    padding-top: 1%;
+    text-shadow: 2px 2px 8px $colorD;
+    font-weight: 100;
+}
+img {
+    vertical-align: middle;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 8px;
+}
+.fa {
+    padding: 5px;
+    font-size: 30px;
+    text-align: center;
+    margin: 30px;
+    border-radius: 10px;
+}
+.fa-instagram {
+    color: $colorB;
+}

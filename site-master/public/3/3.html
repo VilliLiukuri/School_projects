@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    
+<div id="results" style="width:250px; height:auto; padding:20px; border:2px solid">
+
+T1: <input onblur="laske()" type="text" value="0"><br>
+T2: <input onblur="laske()" type="text" value="0"><br>
+T3: <input onblur="laske()" type="text" value="0"><br>
+T4: <input onblur="laske()" type="text" value="0"><br>
+
+<div id="pisteet">pistemäärä: 0</div>
+<div id="arvosana">arvosana: 0</div>
+    
+</div>    
+
+<script>
+
+function laske() {
+    
+    let summa = 0;
+    const numerot = document.getElementsByTagName("input");
+    for (const input of numerot){
+        if(input.value>6){
+        input.value=("Virhe!");
+        }
+    }
+    for(const input of  numerot) {
+        const value = parseInt(input.value);
+        summa += value;
+        //console.log(input.value);
+    }
+    document.getElementById("pisteet").innerHTML = ("pistemäärä: " + summa);
+
+    if (summa<0 || summa>24 || isNaN(summa)) {
+        document.getElementById("arvosana").innerHTML = ("arvosana: Virhe!");
+    }
+    else if (summa<=12 && summa>=0) {
+        document.getElementById("arvosana").innerHTML = ("arvosana: 0");
+    }
+        else if (summa<=15 && summa>=13 ) {
+        document.getElementById("arvosana").innerHTML = ("arvosana: 1");
+    }
+        else if (summa<=17 && summa>=16 ) {
+        document.getElementById("arvosana").innerHTML = ("arvosana: 2");
+    }
+        else if (summa<=19 && summa>=18 ) {
+        document.getElementById("arvosana").innerHTML = ("arvosana: 3");
+    }
+        else if (summa<=21 && summa>=20 ) {
+        document.getElementById("arvosana").innerHTML = ("arvosana: 4");
+    }
+        else if (summa<=24 && summa>=22 ) {
+        document.getElementById("arvosana").innerHTML = ("arvosana: 5");
+    }
+}
+
+
+</script>
+
+</body>
+</html>

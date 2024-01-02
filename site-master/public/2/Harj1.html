@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Harj1</title>
+</head>
+<body>
+
+<h1>Anna kaksi kokonaislukua</h1>
+    
+<form id="f">
+     <input type=number id="n1"><br>
+     <input type=number id="n2"><br><br>
+     <button type="button" onclick="tulostaSumma(f.n1.value, f.n2.value)">Laske</button>
+</form><br>    
+  
+<div id="results"></div>
+  
+<script>
+  
+    function tulostaSumma(a, b){
+
+        a = parseInt(a)
+        b = parseInt(b)
+
+        document.getElementById("results").innerHTML = "Summa = " + (a + b);
+    }
+  
+</script>
+    
+
+
+</body>
+</html>

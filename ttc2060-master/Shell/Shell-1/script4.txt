@@ -1,0 +1,9 @@
+#!/bin/bash
+
+read -p "Give file source: " NAME
+
+read -p "Give file destination: " NAME1
+
+A=$(cp $NAME $NAME1)
+
+echo "copied the" $NAME "to" $NAME1

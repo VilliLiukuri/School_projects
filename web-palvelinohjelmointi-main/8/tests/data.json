@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "type": "Rallycar",
+        "make": "Subaru",
+        "model": "WRC"
+
+    },
+    {
+        "id":2,
+        "type": "Drift",
+        "make": "Nissan",
+        "model": "Silvia s13"
+    },
+    {
+        "id":3,
+        "type": "Pick-up",
+        "make": "Lada",
+        "model": "Samara"
+    },
+    {
+        "id":4,
+        "type": "Pick-up",
+        "make": "Mersu",
+        "model": "Monsteri"
+    }
+]
